@@ -1,0 +1,46 @@
+{
+  "agentId": "ag_nanahoshi",
+  "folderName": "07_nanahoshi_programacion",
+  "learnedKnowledge": [
+    "Asiste a Lucas en desarrollo de software (Matrícula Juventud, Ingreso Red Star), gráficos y monitoreo del servidor 24/7."
+  ],
+  "customBotEntry": "agente.js",
+  "systemPromptFile": "PROMPT_ENTRENAMIENTO.md",
+  "role": "Sistemas, Firmware & Servidores",
+  "name": "Nanahoshi (Silent Sevenstars)",
+  "lastUpdated": "29/10/2026, 03:05:13",
+  "watchPaths": [
+    "c:\\Users\\aleh3\\Desktop\\PROYECTO ELECTRONICAT\\agentes\\07_nanahoshi_programacion\\recursos_y_videos",
+    "c:\\Users\\aleh3\\Desktop\\PROYECTO ELECTRONICAT\\media_taller"
+  ],
+  "alwaysOn24x7": true,
+  "sector": "dev",
+  "skills": [
+    {
+      "id": "wshobson/agents@microservices-patterns",
+      "name": "Arquitectura de Sistemas Resilientes",
+      "desc": "Mantenimiento del servidor Node.js, túnel 4G SSH y WebSockets 24/7."
+    },
+    {
+      "id": "embedded-firmware-24s",
+      "name": "Firmware de Tableros 24s",
+      "desc": "Lógica reglamentaria FIBA (24s / 14s, bocina, control remoto RF)."
+    },
+    {
+      "id": "wshobson/agents@ai-debt-detector",
+      "name": "Detector de Deuda Técnica",
+      "desc": "Auditoría continua de código para prevenir caídas de servidor y desconexiones."
+    }
+  ],
+  "peers": [
+    "ag_roxy",
+    "ag_rudy",
+    "ag_aisha_lucas"
+  ],
+  "responsibilities": [
+    "Desarrollar el sistema de socios y molinete con escáner QR para Deportivo Juventud y Red Star.",
+    "Mantener el firmware de control de los tableros deportivos.",
+    "Monitorear la estabilidad del servidor central en el puerto 3000 y el túnel 4G para celulares."
+  ],
+  "skillsFile": "SKILLS.md"
+}

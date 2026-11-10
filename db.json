@@ -1,0 +1,25 @@
+{
+  "_agent": "07_nanahoshi_programacion",
+  "createdAt": "2026-11-10T19:47:17.999Z",
+  "systemInfo": {
+    "owner": "Ale & Lucas",
+    "company": "Electronicat"
+  },
+  "programs": [
+    {
+      "name": "Matrícula Juventud",
+      "status": "en_desarrollo",
+      "priority": "alta"
+    },
+    {
+      "name": "Sistema Red Star",
+      "status": "en_desarrollo",
+      "priority": "alta"
+    },
+    {
+      "name": "Firmware Tableros 24s",
+      "status": "en_prueba",
+      "priority": "critica"
+    }
+  ]
+}

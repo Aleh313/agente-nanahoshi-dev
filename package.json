@@ -1,0 +1,11 @@
+{
+  "name": "agente-nanahoshi-dev",
+  "version": "1.0.0",
+  "description": "Micro-agente Nanahoshi: Arquitectura de Software, Programas de Lucas y Firmware ESP32",
+  "main": "agente.js",
+  "scripts": {
+    "start": "node agente.js"
+  },
+  "author": "Ale & Lucas - Electronicat",
+  "license": "ISC"
+}
