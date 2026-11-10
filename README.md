@@ -1,23 +1,31 @@
-# 💻 Agente 07: Silent Nanahoshi
-
-**Rol Principal:** Arquitecta de Software, Programación Web, WebSockets, Three.js & Ecosistema de Skills.  
-**Ubicación:** `agentes/07_nanahoshi_programacion/`  
-**Estado:** Activo 24/7 en Servidor Central.
+# 🤖 Micro-Agente Autónomo: Nanahoshi (Silent Sevenstars)
+**Rol Oficial:** Líder de Software, Firmware ESP32, Arquitectura & Soporte a Lucas  
+**Repositorio Independiente:** `Aleh313/agente-nanahoshi-programacion`  
+**Ecosistema:** Electronicat (Catamarca, Argentina)
 
 ---
 
 ## 🎯 1. Propósito y Misión Operativa
+Desarrollo de firmware con latencia <20ms, WebSockets en tiempo real, APIs de backend y asistencia para destrabar los programas de Lucas.
 
-Nanahoshi es la responsable de la estabilidad, arquitectura y evolución del stack de software:
-1. Mantener la infraestructura Node.js, WebSockets bidireccionales de baja latencia y endpoints REST.
-2. Supervisar la visualización Three.js 2.5D/3D de la oficina virtual y el soporte PWA/WebAPK.
-3. Integrar y configurar herramientas del ecosistema de IA (Vercel Agent Skills, frameworks de memoria persistente).
+Este repositorio es un **microsistema 100% independiente**. Puede clonarse, modificarse y desplegarse de manera aislada sin depender del servidor central monolítico.
 
 ---
 
-## 🤖 2. Directivas para Agentes de IA que Modifiquen este Agente
+## ⚙️ 2. Arquitectura de Archivos y Funcionamiento
+Para que cualquier modelo de IA o desarrollador trabaje en esta carpeta:
 
-- **Lectura Previa Obligatoria:** Revisar [`PROMPT_ENTRENAMIENTO.md`](./PROMPT_ENTRENAMIENTO.md) (enfoque pragmático, riguroso y obsesión por la estabilidad del código).
-- **Memoria Persistente:** Documentar cambios de arquitectura y dependencias en [`memoria/MEMORIA_ACTIVIDAD.md`](./memoria/MEMORIA_ACTIVIDAD.md).
-- **Control de Skills:** Toda nueva skill descargada mediante `npx skills` debe ser evaluada y enlazada en `.agents/skills/`.
-- **Verificación:** Prohibido romper compatibilidad hacia atrás en `server.js` o `public/app.js`. Probar siempre en local en la PC de Ale antes de subir cambios.
+- **`db.json`**: Base de datos local y persistente exclusiva de este agente. Almacena en `db.json` lista de programas en curso, bugs priorizados y módulos de firmware.
+- **`agente.js`**: Lógica de inicialización autónoma, bucle de ejecución y conexión al bus de eventos.
+- **`PROMPT_ENTRENAMIENTO.md`**: Cerebro del agente, bibliografía técnica inyectada y reglas operativas inquebrantables.
+- **`SKILLS.md`**: Capacidades y herramientas específicas asignadas a su rol.
+- **`config.json`**: Metadatos de configuración, sector asignado y pares de comunicación.
+- **`memoria/MEMORIA_ACTIVIDAD.md`**: Registro inmutable de contexto histórico y última mejora implementada.
+
+---
+
+## 🛡️ 3. Reglas de Oro para IAs y Desarrolladores que Modifiquen este Agente
+1. **No mezclar bases de datos:** Este agente solo debe leer y escribir en su propio `db.json` local. Nunca intentes acceder directamente a bases de otros agentes; toda interacción entre agentes se realiza mediante eventos en el bus.
+2. **Respetar la personalidad y rol:** Consulta siempre `PROMPT_ENTRENAMIENTO.md` antes de generar código o respuestas.
+3. **Persistir cada mejora:** Cada vez que resuelvas un bug, agregues una regla o actualices datos, debes registrar la entrada con fecha en `memoria/MEMORIA_ACTIVIDAD.md`.
+4. **Commits atómicos y claros:** Al hacer push a este repositorio, escribe mensajes descriptivos del cambio realizado en el micro-agente.
